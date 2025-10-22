@@ -11,9 +11,7 @@ function App() {
     const increment = (incrementValue) => setCount((count) => count + incrementValue);
     const decrement = (decrementValue) => setCount((count) => count - decrementValue);
 
-    const resetCount = () => {
-        setCount(0);
-    }
+    const resetCount = () => setCount(0);
 
     return (
         <>
