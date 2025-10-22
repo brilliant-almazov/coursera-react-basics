@@ -29,6 +29,13 @@
     }
 }
 
+input.main_input {
+    margin-left: 5px;
+    margin-right: 5px;
+
+    text-align: center;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     a:nth-of-type(2) .logo {
         animation: logo-spin infinite 20s linear;
