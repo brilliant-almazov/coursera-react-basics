@@ -1,6 +1,12 @@
 import {ReactNode} from "react";
 
-enum Target {
+interface AProps {
+    children?: ReactNode,
+    href: string,
+    target: Target,
+}
+
+export enum Target {
     BLANK = '_blank',
     SELF = '_self',
     PARENT = '_parent',
@@ -8,13 +14,7 @@ enum Target {
     FRAMENAME = 'framename'
 }
 
-interface AProps {
-    children?: ReactNode,
-    href: string,
-    target: Target,
-}
-
-function A({children, href, target}: AProps) {
+export function A({children, href, target}: AProps) {
     return (
         <>
             <a target={target} href={href}>
@@ -23,5 +23,3 @@ function A({children, href, target}: AProps) {
         </>
     );
 }
-
-export {A, Target};

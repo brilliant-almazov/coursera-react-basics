@@ -4,7 +4,7 @@ interface HeaderProps {
     children?: ReactNode
 }
 
-function Header({children}: HeaderProps) {
+export function Header({children}: HeaderProps) {
     return (
         <>
             <header>
@@ -13,5 +13,3 @@ function Header({children}: HeaderProps) {
         </>
     )
 }
-
-export default Header;

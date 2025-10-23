@@ -4,7 +4,7 @@ interface FooterProps {
     children?: ReactNode
 }
 
-function Footer({children}: FooterProps) {
+export function Footer({children}: FooterProps) {
     return (
         <>
             <footer>
@@ -13,5 +13,3 @@ function Footer({children}: FooterProps) {
         </>
     )
 }
-
-export default Footer;

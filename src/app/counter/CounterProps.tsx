@@ -1,6 +1,6 @@
 import {useState} from 'react'
 
-interface CounterProps {
+export interface CounterProps {
     count: number,
     setCount: (count: number) => void,
 
@@ -14,7 +14,7 @@ interface CounterProps {
     reset: () => void,
 }
 
-function useCounterProps(): CounterProps {
+export function useCounterProps(): CounterProps {
     const [count, setCount] = useState<number>(0);
 
     const [value, setValue] = useState<number>(1);
@@ -37,5 +37,3 @@ function useCounterProps(): CounterProps {
         reset,
     };
 }
-
-export {CounterProps, useCounterProps};

@@ -5,8 +5,7 @@ interface ButtonProps {
     onClick?: () => void,
 }
 
-
-function Button({children, onClick}: ButtonProps) {
+export function Button({children, onClick}: ButtonProps) {
     return (
         <>
             <button onClick={onClick}>
@@ -15,5 +14,3 @@ function Button({children, onClick}: ButtonProps) {
         </>
     );
 }
-
-export default Button;
