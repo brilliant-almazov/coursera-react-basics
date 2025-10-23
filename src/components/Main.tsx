@@ -4,7 +4,7 @@ interface MainProps {
     children?: ReactNode;
 }
 
-function Main({children}: MainProps) {
+export function Main({children}: MainProps) {
     return (
         <>
             <main>
@@ -13,5 +13,3 @@ function Main({children}: MainProps) {
         </>
     );
 }
-
-export default Main;

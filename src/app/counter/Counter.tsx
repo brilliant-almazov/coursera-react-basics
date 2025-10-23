@@ -1,13 +1,13 @@
 import './Counter.css'
 
-import {A, Target as ATarget} from './components/A';
+import {A, Target as ATarget} from '../../components/A';
 
-import Img from './components/Img';
-import Button from './components/Button';
-import {useCounterProps} from './props/CounterProps';
+import {Img} from '../../components/Img';
+import {Button} from '../../components/Button';
+import {useCounterProps} from './CounterProps';
 
 
-function Counter() {
+export function Counter() {
     const props = useCounterProps();
 
     return (
@@ -52,5 +52,3 @@ function Counter() {
         </>
     )
 }
-
-export default Counter;

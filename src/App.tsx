@@ -1,7 +1,7 @@
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
-import Counter from './Counter.js'
+import {Header} from './components/Header'
+import {Main} from './components/Main'
+import {Footer} from './components/Footer'
+import {Counter} from './app/counter/Counter.js'
 
 function App() {
 
